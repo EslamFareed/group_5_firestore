@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:group_5_firestore/screens/profile/profile_screen.dart';
 
 import '../main/main_screen.dart';
 
@@ -13,6 +14,7 @@ class SplashScreen extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) => MainScreen(),
+            // builder: (context) => ProfileScreen(),
           ));
     });
 

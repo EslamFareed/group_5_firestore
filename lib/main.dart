@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:group_5_firestore/cubits/main/main_cubit.dart';
+import 'package:group_5_firestore/cubits/profile/profile_cubit.dart';
 import 'package:group_5_firestore/screens/splash/splash_screen.dart';
 
 import 'firebase_options.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => MainCubit()),
+        BlocProvider(create: (context) => ProfileCubit()),
       ],
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,

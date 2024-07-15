@@ -27,8 +27,8 @@ class MainScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Card(
                   child: ListTile(
-                    title: Text(list[index]["name"]),
-                    subtitle: Text("${list[index]["price"]}"),
+                    title: Text(list[index].name ?? ""),
+                    subtitle: Text("${list[index].price}"),
                   ),
                 );
               },
